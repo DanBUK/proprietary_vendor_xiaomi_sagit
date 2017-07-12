@@ -154,7 +154,7 @@
 					<!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
 					<MACStatsAveragingAlpha>0.55</MACStatsAveragingAlpha>
 					<!-- Threshold for RX MPDU PER -->
-					<RMP_THR>0.07</RMP_THR>
+					<RMP_THR>1</RMP_THR>
 					<!-- Minimum MPDU count to activate RX MPDU PER -->
 					<RMP_CNT_THR>13</RMP_CNT_THR>
 					<!-- Cutoff RX MCS index -->
@@ -162,11 +162,11 @@
 					<!-- Cutoff RX BW index -->
 					<RX_BW_THR>3</RX_BW_THR>
 					<!-- Threshold for TX MSDU drop -->
-					<TMD_THR>0.1</TMD_THR>
+					<TMD_THR>1</TMD_THR>
 					<!-- Minimum MSDU count to activate TX MSDU drop -->
 					<TMD_CNT_THR>2</TMD_CNT_THR>
 					<!-- Threshold for MPDU retry rate -->
-					<TMR_THR>0.54</TMR_THR>
+					<TMR_THR>1</TMR_THR>
 					<!-- Minimum MPDU count to activate MPDU retry rate -->
 					<TMR_CNT_THR>50</TMR_CNT_THR>
 					<!-- Cutoff TX MCS index -->
@@ -178,7 +178,7 @@
 					<!-- Maximum MPDU count to activate MPDU retry rate -->
 					<TMR_UBCNT_THR>1000</TMR_UBCNT_THR>
 					<!-- Threshold for PERAM -->
-					<PERAM_THR>0.11</PERAM_THR>
+					<PERAM_THR>1</PERAM_THR>
 					<!-- Minimum MPDU count to activate PERAM -->
 					<PERAM_CNT_THR>10</PERAM_CNT_THR>
 					<!-- Maximum MPDU count to activate PERAM -->
