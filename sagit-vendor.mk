@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/xiaomi/sagit/proprietary/bin/btnvtool:system/bin/btnvtool \
+    vendor/xiaomi/sagit/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/xiaomi/sagit/proprietary/bin/cnd:system/bin/cnd \
     vendor/xiaomi/sagit/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/xiaomi/sagit/proprietary/bin/dpmd:system/bin/dpmd \
@@ -51,6 +52,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb:system/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb \
     vendor/xiaomi/sagit/proprietary/etc/acdbdata/Forte/Forte_Headset_cal.acdb:system/etc/acdbdata/Forte/Forte_Headset_cal.acdb \
     vendor/xiaomi/sagit/proprietary/etc/acdbdata/Forte/Forte_Speaker_cal.acdb:system/etc/acdbdata/Forte/Forte_Speaker_cal.acdb \
+    vendor/xiaomi/sagit/proprietary/etc/acdbdata/Forte/Forte_workspaceFile.qwsp:system/etc/acdbdata/Forte/Forte_workspaceFile.qwsp \
     vendor/xiaomi/sagit/proprietary/etc/acdbdata/adsp_avs_config.acdb:system/etc/acdbdata/adsp_avs_config.acdb \
     vendor/xiaomi/sagit/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
     vendor/xiaomi/sagit/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
@@ -120,6 +122,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
     vendor/xiaomi/sagit/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/xiaomi/sagit/proprietary/etc/firmware/tfa98xx_aac.cnt:system/etc/firmware/tfa98xx_aac.cnt \
+    vendor/xiaomi/sagit/proprietary/etc/firmware/tfa98xx_ssi.cnt:system/etc/firmware/tfa98xx_ssi.cnt \
     vendor/xiaomi/sagit/proprietary/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
     vendor/xiaomi/sagit/proprietary/etc/modem/Diag.cfg:system/etc/modem/Diag.cfg \
     vendor/xiaomi/sagit/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
@@ -220,6 +223,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/vendor/lib/hw/sound_trigger.primary.msm8998.so:system/vendor/lib/hw/sound_trigger.primary.msm8998.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/hw/power.msm8998.so:system/vendor/lib/hw/power.msm8998.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/hw/vulkan.msm8998.so:system/vendor/lib/hw/vulkan.msm8998.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:system/vendor/lib/libadsp_hvx_callback_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/libFaceGrade.so:system/vendor/lib/libFaceGrade.so \
@@ -749,19 +754,31 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/dirac_resource.so:system/vendor/lib/rfsa/adsp/dirac_resource.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libdirac-capiv2.so:system/vendor/lib/rfsa/adsp/libdirac-capiv2.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libedge_smooth_skel.so:system/vendor/lib/rfsa/adsp/libedge_smooth_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libqvr_adsp_driver_skel.so:system/vendor/lib/rfsa/adsp/libqvr_adsp_driver_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so:system/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so:system/vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so:system/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libscveVideoSummary_skel.so:system/vendor/lib/rfsa/adsp/libscveVideoSummary_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so:system/vendor/lib/rfsa/adsp/libvpp_frc.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:system/vendor/lib/rfsa/adsp/libvpp_svc_skel.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
