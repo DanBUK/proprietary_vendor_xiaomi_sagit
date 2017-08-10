@@ -902,9 +902,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
-    vendor/xiaomi/sagit/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
-    vendor/xiaomi/sagit/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
-    vendor/xiaomi/sagit/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
@@ -976,6 +973,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib64/libloc_externalDr.so:system/vendor/lib64/libloc_externalDr.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/soundfx/libqcbassboost.so:system/vendor/lib64/soundfx/libqcbassboost.so \
