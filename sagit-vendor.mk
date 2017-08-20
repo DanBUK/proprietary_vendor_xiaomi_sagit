@@ -1009,5 +1009,23 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
+    libqminvapi \
+    libloc_api_v02 \
+    libgpustats \
+    libsdm-disp-apis \
+    libthermalclient \
+    libtime_genoff \
+    QtiTelephonyService \
+    TimeService \
+    datastatusnotification \
+    embms \
+    shutdownlistener \
     CNEService \
-    dpmserviceapp
+    QtiTetherService \
+    com.qualcomm.location \
+    dpmserviceapp \
+    qcrilmsgtunnel \
+    colorservice \
+    ims \
+    imssettings \
+    qcrilhook
