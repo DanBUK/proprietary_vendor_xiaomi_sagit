@@ -133,6 +133,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/xiaomi/sagit/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/sagit/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/sagit/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/xiaomi/sagit/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/sagit/proprietary/etc/qdcm_calib_data_jdi_fhd_cmd_incell_dsi_panel.xml:system/etc/qdcm_calib_data_jdi_fhd_cmd_incell_dsi_panel.xml \
     vendor/xiaomi/sagit/proprietary/etc/qdcm_calib_data_lgd_fhd_cmd_incell_dsi_panel.xml:system/etc/qdcm_calib_data_lgd_fhd_cmd_incell_dsi_panel.xml \
@@ -156,6 +157,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/xiaomi/sagit/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/xiaomi/sagit/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/xiaomi/sagit/proprietary/framework/org.codeaurora.camera.jar:system/framework/org.codeaurora.camera.jar \
     vendor/xiaomi/sagit/proprietary/lib/hw/camera.msm8998.so:system/lib/hw/camera.msm8998.so \
     vendor/xiaomi/sagit/proprietary/lib/hw/fingerprint.goodix.so:system/lib/hw/fingerprint.goodix.so \
     vendor/xiaomi/sagit/proprietary/lib/libMiCameraHal.so:system/lib/libMiCameraHal.so \
@@ -209,6 +211,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
     vendor/xiaomi/sagit/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
     vendor/xiaomi/sagit/proprietary/vendor/firmware/libpn553_fw.so:system/vendor/firmware/libpn553_fw.so \
+    vendor/xiaomi/sagit/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
     vendor/xiaomi/sagit/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
