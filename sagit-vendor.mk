@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/xiaomi/sagit/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/xiaomi/sagit/proprietary/bin/cnd:system/bin/cnd \
+    vendor/xiaomi/sagit/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/xiaomi/sagit/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/xiaomi/sagit/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/xiaomi/sagit/proprietary/bin/energy-awareness:system/bin/energy-awareness \
@@ -140,7 +141,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/etc/qdcm_calib_data_lgd_fhd_cmd_incell_dsi_panel.xml:system/etc/qdcm_calib_data_lgd_fhd_cmd_incell_dsi_panel.xml \
     vendor/xiaomi/sagit/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/xiaomi/sagit/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
+    vendor/xiaomi/sagit/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/xiaomi/sagit/proprietary/etc/thermal-engine-8998.conf:system/etc/thermal-engine-8998.conf \
+    vendor/xiaomi/sagit/proprietary/etc/thermal-engine-8998-high.conf:system/etc/thermal-engine-8998-high.conf \
+    vendor/xiaomi/sagit/proprietary/etc/thermal-engine-8998-map.conf:system/etc/thermal-engine-8998-map.conf \
     vendor/xiaomi/sagit/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/xiaomi/sagit/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/xiaomi/sagit/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
@@ -160,14 +164,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/xiaomi/sagit/proprietary/framework/org.codeaurora.camera.jar:system/framework/org.codeaurora.camera.jar \
     vendor/xiaomi/sagit/proprietary/lib/hw/camera.msm8998.so:system/lib/hw/camera.msm8998.so \
-    vendor/xiaomi/sagit/proprietary/lib/hw/fingerprint.goodix.so:system/lib/hw/fingerprint.goodix.so \
     vendor/xiaomi/sagit/proprietary/lib/libMiCameraHal.so:system/lib/libMiCameraHal.so \
     vendor/xiaomi/sagit/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/xiaomi/sagit/proprietary/lib/libcalapi.so:system/lib/libcalapi.so \
     vendor/xiaomi/sagit/proprietary/lib/libCameraEffectJNI.so:system/lib/libCameraEffectJNI.so \
-    vendor/xiaomi/sagit/proprietary/lib/libgf_ca.so:system/lib/libgf_ca.so \
-    vendor/xiaomi/sagit/proprietary/lib/libgf_hal.so:system/lib/libgf_hal.so \
-    vendor/xiaomi/sagit/proprietary/lib/libgoodixfingerprintd_binder.so:system/lib/libgoodixfingerprintd_binder.so \
     vendor/xiaomi/sagit/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/xiaomi/sagit/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/xiaomi/sagit/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
@@ -810,6 +810,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+    vendor/xiaomi/sagit/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/hw/activity_recognition.msm8998.so:system/vendor/lib64/hw/activity_recognition.msm8998.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/xiaomi/sagit/proprietary/vendor/lib64/hw/gatekeeper.msm8998.so:system/vendor/lib64/hw/gatekeeper.msm8998.so \
